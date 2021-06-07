@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import Section from './Section';
 
 function Home() {
     return (
         <div>
-            Home
+            <Section />
         </div>
     )
 }
