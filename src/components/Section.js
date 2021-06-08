@@ -23,7 +23,7 @@ const Container = styled.div`
     background-color: blue;
     width: 100%;
     height: 100vh;
-    background-image: ${props => `url('/images/${props.bgImage}')`};
+    background-image: ${props => `url('/images/${props.bgImage }')`};
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -39,6 +39,12 @@ const ItemText = styled.div`
 const ButtonGroup =styled.div`
     display: flex;
     margin-bottom: 30px;
+
+    @media(max-width: 768px){
+        display: flex;
+        flex-direction:column;
+        margin-top: 30px;
+    }
 `
 
 const LeftButton = styled.div`
@@ -55,6 +61,10 @@ const LeftButton = styled.div`
     opacity: 0.85;
     margin: 8px;
     cursor: pointer;
+    &:hover {
+        opacity: 1;
+        font-size: 14px;
+    }
 `
 
 const RightButton = styled(LeftButton)`

@@ -15,12 +15,11 @@ function Header() {
                 <img src="/images/logo.svg" />
             </a>
             <MenuGroup>
-                <div>Model S</div>
-                <div>Model 3</div>
-                <div>Model X</div>
-                <div>Model Y</div>
-                <div>Cybertruck</div>
-                <div>Powerwall</div>
+                <div><a href="#">Model S</a></div>
+                <div><a href="#">Model 3</a></div>
+                <div><a href="#">Model X</a></div>
+                <div><a href="#">Model Y</a></div>
+            
             </MenuGroup>
             <RightMenu>
                 <a href="#">Shop</a>
@@ -74,6 +73,11 @@ const MenuGroup = styled.div`
         font-weight: 600;
         padding: 0 10px;
         cursor: pointer;
+        
+    }
+
+    a:hover {
+        font-size:18px;
     }
 
     @media(max-width: 768px) {
@@ -88,6 +92,10 @@ const RightMenu = styled.div`
         font-weight: 600;
         text-transform: uppercase;
         padding-right: 10px;
+    }
+
+    a:hover {
+        font-size:18px;
     }
 `
 
@@ -123,5 +131,6 @@ const BurgerNav =styled.div`
            font-weight: 600;
         }
     }
+
 
 `
