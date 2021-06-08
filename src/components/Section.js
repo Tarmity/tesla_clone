@@ -54,6 +54,7 @@ const LeftButton = styled.div`
     font-size: 12px;
     opacity: 0.85;
     margin: 8px;
+    cursor: pointer;
 `
 
 const RightButton = styled(LeftButton)`
@@ -64,5 +65,6 @@ const RightButton = styled(LeftButton)`
 
 const DownArrow = styled.img`
     height: 40px;
-    
+    animation: animateDown infinite 1.5s;
+    margin-bottom: 50px;
 `
